@@ -4,11 +4,11 @@ Author: John Vrbanac
 
 This package is a collection of ActionScript 3 utility classes
 
- - PropertyLibrary
-> The property library is designed to be a simple data repository
-> for all data types. Currently, it only provides a method for
-> getting/setting individual values. In the future, you'll be
-> able to retrieve entire categories of data values.
+ - PropertyLibrary <br />
+ The property library is designed to be a simple data repository
+ for all data types. Currently, it only provides a method for
+ getting/setting individual values. In the future, you'll be
+ able to retrieve entire categories of data values.
 
 
 License:
