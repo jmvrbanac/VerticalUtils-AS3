@@ -9,6 +9,10 @@ This package is a collection of ActionScript 3 utility classes
  for all data types. Currently, it only provides a method for
  getting/setting individual values. In the future, you'll be
  able to retrieve entire categories of data values.
+ 
+ - AdvancedSprite <br />
+ The AdvancedSprite is an alternative sprite base class that 
+ allows for easier cleanup for garbage collection.
 
 
 License:
