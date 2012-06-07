@@ -3,6 +3,7 @@ package com.verticalcue.utils.library
 	import com.verticalcue.errors.NotImplementedError;
 	/**
 	 * Stores and retrieves values through a basic XPath like stucture.
+	 * @version 1.0
 	 * @author John Vrbanac
 	 */
 	public class PropertyLibrary 

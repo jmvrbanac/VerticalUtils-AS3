@@ -63,6 +63,42 @@ package com.verticalcue.utils.library
 			Assert.assertEquals("//root/child2/subChild/otherChild/enabled=true", results[1]);
 		}
 		
+		[Test(timeout="10000", description="", issueID="")]
+		public function testReAddingValue():void
+		{
+			_library.addValue("//basePath1/entry", "TEST STRING");
+			Assert.assertEquals("TEST STRING", _library.getValue("//basePath1/entry"));
+			
+			_library.addValue("//basePath1/entry", "TEST STRING1");
+			Assert.assertEquals("TEST STRING1", _library.getValue("//basePath1/entry"));
+		}
+		
+		[Test(timeout="10000", description="", issueID="")]
+		public function testReAddingValueFromKeyValueString():void
+		{
+			_library.addKeyValueString("//keyBase/secondCat/boom=test");
+			Assert.assertEquals("test", _library.getValue("//keyBase/secondCat/boom"));
+			
+			_library.addKeyValueString("//keyBase/secondCat/boom=test1");
+			Assert.assertEquals("test1", _library.getValue("//keyBase/secondCat/boom"));
+		}
+		
+		[Test(timeout = "10000", description = "", issueID = "")]
+		public function testGetValueBeforeAssignment():void
+		{
+			var result:XML = _library.getValue("//basePath1/entry");
+			Assert.assertNull(result);			
+		}
+		
+		[Test(timeout = "10000", description = "", issueID = "")]
+		public function testAddingMultipleValuesToCategory():void
+		{
+			_library.addValue("//basePath1/entry", "TEST STRING");
+			_library.addValue("//basePath1/entry1", "TEST STRING");
+			
+			Assert.assertEquals("TEST STRING", _library.getValue("//basePath1/entry"));
+			Assert.assertEquals("TEST STRING", _library.getValue("//basePath1/entry1"));
+		}
 	}
 
 }

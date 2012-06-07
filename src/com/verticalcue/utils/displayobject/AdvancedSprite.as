@@ -8,6 +8,7 @@ package com.verticalcue.utils.displayobject
 	/**
 	 * A sprite based class that allows for easier cleanup for
 	 * garbage collection.
+	 * @version 1.0
 	 * @author John Vrbanac
 	 */
 	public class AdvancedSprite extends Sprite 
